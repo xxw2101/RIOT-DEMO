@@ -13,7 +13,7 @@ for index file, the <script> part has to come with riot.amount ("*")to load spec
   
 for loop in Riot, child element directly correspond to the key in the loop and the value; 
 
-<main>
+>>> <main>
 <div each = { person }>
     <h1>{ name }</h1>
     <p>{ age }</p>
@@ -37,7 +37,7 @@ for loop in Riot, child element directly correspond to the key in the loop and t
 </script>
 
 <main>
-  
+  >>>
   or the simple loop will be like 
   
   <main>
