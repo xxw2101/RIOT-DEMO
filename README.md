@@ -6,14 +6,15 @@ For this week's assignment, I have to apologize for the inconvenience that I was
 here's some summary that i find interesting about the Riot. 
 
 for Riot, there are two basic type: real time or the local; the real time requires riot.js plus the compiler file, link sthe riot with tag file. such as:
-<script type="tag/riot" src="tags/main.tag"></script>
+```<script type="tag/riot" src="tags/main.tag"></script>```
 
 for index file, the <script> part has to come with riot.amount ("*")to load specific tag.
   
   
 for loop in Riot, child element directly correspond to the key in the loop and the value; 
 
->>> <main>
+```
+<main>
 <div each = { person }>
     <h1>{ name }</h1>
     <p>{ age }</p>
@@ -37,9 +38,12 @@ for loop in Riot, child element directly correspond to the key in the loop and t
 </script>
 
 <main>
-  >>>
+```
+
+
   or the simple loop will be like 
-  
+
+```
   <main>
 
 <p each={i in nameList}> { i }</p>
@@ -48,12 +52,12 @@ for loop in Riot, child element directly correspond to the key in the loop and t
     this.nameList = ["Lily","Ally","Matthew"]；
 <script>
 <main>
-  
+```  
   
   
  For Dom in Riot, document.querySelector is no longer required to get the element. The ref is more of an efficient way to execute. 
  
- <main>
+``` <main>
 
   <input type = "text"  ref="getInput" onkeypress = { change }><input>
   <p>This is the text from the input: { textValue }</p>
@@ -66,6 +70,7 @@ for loop in Riot, child element directly correspond to the key in the loop and t
   </script>
 
 </main>
+```
 
 thank you for your time.  
  
