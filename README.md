@@ -1,13 +1,18 @@
 # RIOT-DEMO
 
-Hi there, for this week's assignment, i was not able to upload any video due to the series problem caused by vpn connections. i had problem accessing online videos as well, therefore, i kinda of yahooed some main features regarding the Riot. 
+Hi there, 
+For this week's assignment, I have to apologize for the inconvenience that I was not able to upload any video due to the series problems caused by VPN connections. I have trouble accessing online videos as well, the internet connection is on and off very often, therefore, I kinda of yahooed some main features regarding the Riot. 
 
-for Riot, there are two basic type: real time or the local; the real time requires riot.js plus the compiler file, link sthe riot with tag file. such as:<script type="tag/riot" src="tags/main.tag"></script>
+here's some summary that i find interesting about the Riot. 
 
-for index file, the <script> part has to come with riot.amount ("*")for loading specific tag.
+for Riot, there are two basic type: real time or the local; the real time requires riot.js plus the compiler file, link sthe riot with tag file. such as:
+<script type="tag/riot" src="tags/main.tag"></script>
+
+for index file, the <script> part has to come with riot.amount ("*")to load specific tag.
   
   
-for loop in Riot, state early in parent styles
+for loop in Riot, child element directly correspond to the key in the loop and the value; 
+
 <main>
 <div each = { person }>
     <h1>{ name }</h1>
@@ -46,5 +51,21 @@ for loop in Riot, state early in parent styles
   
   
   
- for Dom in Riot 
+ For Dom in Riot, document.querySelector is no longer required to get the element. The ref is more of an efficient way to execute. 
+ 
+ <main>
+
+  <input type = "text"  ref="getInput" onkeypress = { change }><input>
+  <p>This is the text from the input: { textValue }</p>
+
+  <script>
+    this.textValue = "initial";
+    this.change = function() {
+      this.textValue = this.refs.getInput.value;
+    }
+  </script>
+
+</main>
+
+thank you for your time.  
  
