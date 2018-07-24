@@ -35,7 +35,7 @@
 			justify-content: space-around;
 		}
 		.photo-wrap > .photo {
-			width: 300px;
+			width: 350px;
 			box-shadow: 1px 2px 7px 0 rgba(0, 0, 0, 0.3);
 		}
 
