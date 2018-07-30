@@ -19,3 +19,6 @@ for this week's assignment, i am still working on my understanding toward Riot
 
 
 if we change the abovementioned if to hide or show, it will still proceed to function 
+nevertheless, hide is opposite of show/if 
+
+the differences between if/show/hide
