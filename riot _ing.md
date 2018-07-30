@@ -132,5 +132,28 @@ child
 ```
 3. child obtain the data from parent 
 
+child tag uses this.parent to get parent tag and get data 
+```
+<app>
+<h1> Hello from the app tag</h1>
+<inner></inner> 
+<script>
+this.data=1;
+</script> 
+</app>
+```
+child tag 
+```
+<inner> 
+<h1> Hello from the inner tag</h1>
+<script> 
+//this.on('mount',()=> {)
+let parentData= this.parent.data;
 
- 
+console.log (parentData);
+</script>
+</inner>
+```
+
+
+
