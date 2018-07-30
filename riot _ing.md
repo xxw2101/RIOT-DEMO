@@ -69,10 +69,9 @@ therefore, it is better to use var to point the current tag, then uses setTimeou
 
 Riot: parent-child 
 1. parent sends data to child, child receives data 
-2. parent obtain the data from child 
-3. child obtain the data from parent 
+uses opts 
 
-1. parent 
+parent 
 ```
 <parent>
 
@@ -100,7 +99,38 @@ title is a self-defined attribute, can be customized accordingly
 if we set title= {this.xxx}, it offers flexibility to opts 
 
 
+2. parent obtain the data from child 
+uses tags
 
+parent
+```
+<parent>
+
+  <p>{ childData }</p>
+
+  <child></child>
+
+  <script>
+    this.childData = this.tags.
+  </script>
+
+</parent>
+```
+
+child
+
+```
+<child>
+
+  <p>{ this.data }</p>
+
+  <script>
+    this.data = "i am waiting for the parent to obtaining "
+  </script>
+
+</child>
+```
+3. child obtain the data from parent 
 
 
  
