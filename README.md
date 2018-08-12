@@ -1,5 +1,8 @@
 # RIOT-DEMO
 
+https://youtu.be/H6Jk16sd0iA make up video 
+and the demo page is in the riot-demo folder
+
 Hi there, 
 For this week's assignment, I have to apologize for the inconvenience that I was not able to upload any video due to the series problems caused by VPN connections. I have trouble accessing online videos as well, the internet connection is on and off very often, therefore, I kinda of yahooed some main features regarding the Riot. 
 
